@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeometricActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.canvasplayground.view.geometric.RetangleView
+            android:id="@+id/retangleWithoutPadding"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/squareWithoutPadding"/>
+
+        <com.example.canvasplayground.view.geometric.RetangleView
+            android:id="@+id/retangleWithPadding"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="50dp"
+            app:layout_constraintTop_toTopOf="@id/retangleWithoutPadding"
+            app:layout_constraintBottom_toBottomOf="@id/retangleWithoutPadding"
+            app:layout_constraintStart_toStartOf="@id/retangleWithoutPadding"
+            app:layout_constraintEnd_toEndOf="@id/retangleWithoutPadding"/>
+
+        <com.example.canvasplayground.view.geometric.SquareView
+            android:id="@+id/squareWithoutPadding"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/retangleWithoutPadding"
+            app:layout_constraintBottom_toTopOf="@+id/circleWithouPadding"/>
+
+        <com.example.canvasplayground.view.geometric.SquareView
+            android:id="@+id/squareWithPadding"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="50dp"
+            app:layout_constraintTop_toTopOf="@id/squareWithoutPadding"
+            app:layout_constraintBottom_toBottomOf="@id/squareWithoutPadding"
+            app:layout_constraintStart_toStartOf="@id/squareWithoutPadding"
+            app:layout_constraintEnd_toEndOf="@id/squareWithoutPadding"/>
+
+        <com.example.canvasplayground.view.geometric.CircleView
+            android:id="@+id/circleWithouPadding"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@+id/squareWithoutPadding"
+            app:layout_constraintBottom_toTopOf="@+id/triangleWithouPadding"
+            />
+
+        <com.example.canvasplayground.view.geometric.CircleView
+            android:id="@+id/circleWithPadding"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="100dp"
+            app:layout_constraintTop_toTopOf="@id/circleWithouPadding"
+            app:layout_constraintBottom_toBottomOf="@id/circleWithouPadding"
+            app:layout_constraintStart_toStartOf="@id/circleWithouPadding"
+            app:layout_constraintEnd_toEndOf="@id/circleWithouPadding"/>
+
+
+        <com.example.canvasplayground.view.geometric.TriangleView
+            android:id="@+id/triangleWithouPadding"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@+id/circleWithouPadding"
+            />
+
+        <com.example.canvasplayground.view.geometric.TriangleView
+            android:id="@+id/triangleWithPadding"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:paddingStart="100dp"
+            android:paddingEnd="100dp"
+            app:layout_constraintTop_toTopOf="@id/triangleWithouPadding"
+            app:layout_constraintBottom_toBottomOf="@id/triangleWithouPadding"
+            app:layout_constraintStart_toStartOf="@id/triangleWithouPadding"
+            app:layout_constraintEnd_toEndOf="@id/triangleWithouPadding"/>
+
+        <com.example.canvasplayground.view.geometric.CubeView
+            android:id="@+id/cube"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:layout_constraintTop_toBottomOf="@+id/triangleWithouPadding"/>
+
+        <com.example.canvasplayground.view.geometric.CilinderView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintTop_toBottomOf="@+id/cube"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

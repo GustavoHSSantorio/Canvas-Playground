@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="animation_intepolation" format="enum">
+        <enum name="LinearOutSlowInInterpolator" value="0"/>
+        <enum name="AccelerateDecelerateInterpolator" value="1"/>
+        <enum name="AccelerateInterpolator" value="2"/>
+        <enum name="AnticipateInterpolator" value="3"/>
+        <enum name="AnticipateOvershootInterpolator" value="4"/>
+        <enum name="BounceInterpolator" value="5"/>
+        <enum name="DecelerateInterpolator" value="6"/>
+        <enum name="FastOutLinearInInterpolator" value="7"/>
+        <enum name="FastOutSlowInInterpolator" value="8"/>
+        <enum name="OvershootInterpolator" value="9"/>
+    </attr>
+
+    <declare-styleable name="SliderAnimationView">
+        <attr name="animation_intepolation"/>
+    </declare-styleable>
+</resources>

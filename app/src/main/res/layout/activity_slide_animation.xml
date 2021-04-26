@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SlideAnimationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="LinearOutSlowInInterpolator"
+            />
+
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="AccelerateDecelerateInterpolator"
+            />
+
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="AccelerateInterpolator"
+            />
+
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="AnticipateInterpolator"
+            />
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="AnticipateOvershootInterpolator"
+            />
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="BounceInterpolator"
+            />
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="DecelerateInterpolator"
+            />
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="FastOutLinearInInterpolator"
+            />
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="FastOutSlowInInterpolator"
+            />
+        <com.example.canvasplayground.view.animations.SliderAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:animation_intepolation="OvershootInterpolator"
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
