@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.sonar.setOnClickListener {
+            startActivity(Intent(this, RotationAnimationActivity::class.java))
         }
     }
 }
