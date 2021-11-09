@@ -12,9 +12,6 @@ class RotationAnimation  @JvmOverloads constructor(
         defStyleAttr: Int = 0,
         defStyleRes: Int = 0) : CanvasView(context, attrs, defStyleAttr) {
 
-    private var viewRealWidth: Float = 0f
-    private var viewRealHeight: Float = 0f
-    private var viewRealSizePercentageByFour: Float = 0f
     private var viewCX: Float = 0f
     private var viewCY: Float = 0f
     private var loadingDegree: Float = 0f
@@ -26,6 +23,7 @@ class RotationAnimation  @JvmOverloads constructor(
 
     init {
         anim.duration = 1000
+        paint.strokeWidth = 20f
         configureAnimation()
     }
 
@@ -35,7 +33,7 @@ class RotationAnimation  @JvmOverloads constructor(
         canvas?.rotate(loadingDegree, viewCX, viewCY)
         canvas?.drawLine(
                 viewCX - 50f,
-                (viewCY), viewCX + 50f, (viewCY), paint
+                viewCY, viewCX + 50f, viewCY, paint
         )
         canvas?.restore()
     }

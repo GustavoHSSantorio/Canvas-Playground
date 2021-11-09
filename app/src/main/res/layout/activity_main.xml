@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <Button
         android:id="@+id/geometric"
@@ -19,8 +19,20 @@
         android:text="Slider Progress"/>
 
     <Button
-        android:id="@+id/sonar"
+        android:id="@+id/loading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sonar"/>
+        android:text="Loading"/>
+
+    <Button
+        android:id="@+id/lottie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lottie"/>
+
+    <Button
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gráfico de Linha"/>
 </LinearLayout>

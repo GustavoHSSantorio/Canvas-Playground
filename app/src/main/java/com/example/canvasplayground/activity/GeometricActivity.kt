@@ -1,7 +1,8 @@
-package com.example.canvasplayground
+package com.example.canvasplayground.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.canvasplayground.R
 
 class GeometricActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

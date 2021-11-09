@@ -1,4 +1,4 @@
-package com.example.canvasplayground
+package com.example.canvasplayground.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -22,8 +22,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, GeometricActivity::class.java))
         }
 
-        binding.sonar.setOnClickListener {
+        binding.loading.setOnClickListener {
             startActivity(Intent(this, RotationAnimationActivity::class.java))
+        }
+
+        binding.lottie.setOnClickListener {
+            startActivity(Intent(this, LottieActivity::class.java))
+        }
+
+        binding.linechart.setOnClickListener {
+            startActivity(Intent(this, LineChartActivity::class.java))
         }
     }
 }

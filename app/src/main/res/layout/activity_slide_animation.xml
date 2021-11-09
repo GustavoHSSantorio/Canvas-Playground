@@ -7,9 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SlideAnimationActivity">
+    tools:context=".activity.SlideAnimationActivity">
 
     <LinearLayout
+        android:id="@+id/lala"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
